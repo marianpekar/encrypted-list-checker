@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@500&display=swap');
+
+
+body {
+    background: #efefef;
+    color: #646464;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    background: 0;
+    border: 0;
+    outline: none;
+    width: 80vw;
+    max-width: 420px;
+    font-size: 1em;
+    color: #727272;
+    transition: padding 0.2s 0.1s ease;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input:focus {
+    padding-bottom: 10px;
+    color: #34af71;
+}
+
+input:focus + .line:after {
+    transform: scaleX(1.1);
+}
+
+input::placeholder {
+    color: #bdc3c7;
+}
+
+.field {
+    position: relative;
+    margin-top: 17px;
+}
+
+.field .line {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    background: #bdc3c7;
+}
+
+.field .line:after {
+    content: " ";
+    position: absolute;
+    float: right;
+    width: 100%;
+    height: 3px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+    background: #34af71;
+}
+
+button{
+    background: #34af71;
+    font-family: 'Bebas Neue', cursive;
+    color: #efefef;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.3em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    outline: none;
+    width: 420px;
+}
+
+button:hover{
+    background: #efefef;
+    color: #34af71;
+}
+
+button:before,button:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #34af71;
+    transition: 400ms ease all;
+}
+
+button:after{
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,button:hover:after{
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 3px;
+}
+
+.green-text {
+    color: #34af71; 
+}
+
+.container {
+    position: relative;
+    top: 2em;
+    margin: auto;
+    width: 420px;
+}  
+
+#controlls {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 100%;
+}
+
+#result {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
